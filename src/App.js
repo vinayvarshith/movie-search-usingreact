@@ -21,12 +21,13 @@ const TextTitle = Typography.Title;
 
 const SearchBox = ({searchHandler}) => {
     return (
-        <Row>
-            <Col span={12} offset={6}>
+<Row style ={{width : "100%"}}>
+            <Col span={12} offset={6} >
                 <Search
+
                     placeholder="enter movies to add to wishlist"
                     enterButton="Search"
-                    size="large"
+                    size="medium"
                     onSearch={value => searchHandler(value)}
                 />
             </Col>
